@@ -32,19 +32,16 @@ header {
     z-index: 11;
 }
 
-.nav {
+.navbar {
+    width: 100%;
     height: 80px;
-    display: inline-block;
     color: #fff;
 }
 
 .logo {
-    width: 25%;
-    float: left; 
     font-size: 22px;
     font-weight: bold;    
     margin-left: 25px;
-    margin-top: 27px;
 }
 
 .logo a {
@@ -56,67 +53,42 @@ header {
     color: #000;
 }
 
-.menu {
-    width: 100%;
-    padding: 20px 100px;
-    font-size: 20px;
-    position: relative;
+.navbar-nav {
+    margin: 0 auto;
 }
 
-.menu ul {
-    margin-top: 7px;
-    list-style: none;
-}
-
-.menu ul li {    
-    display: inline-block;
-    margin-right: 20px;
-    position:relative;
-}
-
-.menu ul ul {    
-    position: absolute;
-    display: none;
-    background-color: #bc8929;
-}
-
- .menu ul li:hover ul {
-    display:block;
-    z-index: 10;   
- }
-
- .menu ul ul li {
-    display: block;
-    background-color: #bc8929;
-    padding: 15px;
-    border-bottom: 1px solid #eee;
-    z-index: 10;
- }
-
- .menu ul ul li:hover {
-    display:block;
-    z-index: 11;   
- }
-
-.menu a {
+.nav-item a {
     text-decoration: none;
     color: #fff;
  }
 
-.menu a:hover {
+.nav-item a:hover {
     color: #333;
  }
 
+ .dropdown-menu {
+    background-color: #bc8929;
+    color: #fff;
+ }
+
+
+ .navbar a:hover,
+ .navbar .active,
+ .navbar .active:focus,
+ .navbar li:hover > a {
+  color: #333;
+  background-color: transparent;
+}
+
 .accion {
-    width: 15%;
-    float: right;
+    height: 80px;
     color: #fff;
     margin-right: 25px;
-    display: inline-block;
     background-color: #000;
     border: 3px solid #eee;
     padding: 15px;    
     text-align: center;
+    font-size: 16px;
 }
 
 main {
@@ -324,7 +296,7 @@ section {
 }
 
 .half-imagen {
-    float: left;
+    /* float: left; */
     position: absolute;
     top: 50%;
     width: 40%;
@@ -342,7 +314,7 @@ section {
 }
 
 .half-texto {
-    float: right;
+    /* float: right; */
     background-color: #fff;
     min-height: 100vh;
     width: 50%;
@@ -464,7 +436,7 @@ section {
 }
 
 .nos {
-    float: left;
+    /* float: left; */
     max-width: 50%;
     padding: 100px 60px 40px;
     background: rgba(255,255,255,.8);
@@ -531,7 +503,7 @@ section {
 
 .formulario {
     display: inline-block;
-    float: right;
+    /* float: right; */
     max-width: 100%;
     padding: 100px 60px;
     background-color: #bc8929;
@@ -595,7 +567,7 @@ textarea {
 }
 
 .con {
-    float: left;
+   /*  float: left; */
     display: inline-block;
     max-width: 50%;
     padding: 100px 60px 40px;
@@ -692,6 +664,20 @@ footer .redes {
 .whatsapp img {
     max-width: 60px;
 }
+
+/* vista mobile */
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+    .cto {
+        width: 90%;  
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .cto {
+        width: 60%;  
+    }
+}
+
 
 /* pages */ 
 
