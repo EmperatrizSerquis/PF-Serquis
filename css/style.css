@@ -22,6 +22,10 @@ h1, h2, h3 {
     text-align: center;
 }
 
+a:hover {
+    color: orange;
+}
+
 header {
     height: 80px;
     width: 100%;
@@ -78,6 +82,12 @@ header {
  .navbar li:hover > a {
   color: #333;
   background-color: transparent;
+}
+
+@media (max-width: 371px) {
+    .logo {
+        font-size: 18px;
+    }
 }
 
 .accion {
@@ -180,6 +190,7 @@ h1 {
 }
 
 .info-black {
+    display: flex;
     text-align: center;
     background-color: #fff;
     border-top: 1px solid #2a2a2a;
@@ -187,36 +198,171 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 5px;
     padding: 10px;
+    
 }
 
-.info-black h2 {
+marquee {
     font-weight: 300;
     font-size: 20px;
     color: #bc8929;
+    margin-bottom: 0px;
+   
 }
 
-/* Perdón pero no pude hacer los círculos sin flexbox y me gustaría alguna indicación de cómo hacer el responsive como en los diseños */
+/* Circles Section */
 
-.circles {
-    display: flex;   
-    justify-content: space-around;  
-    padding-top: 20px;
-    padding-bottom: 80px;    
- }
+.grid-container-circles {
+    margin: 50px auto;
+    width: 100%;
+    height: auto;
+    display: grid;
+  
+  }
+  
+  .grid-item {
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  @media (min-width: 850px) {
+      .grid-container-circles {
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: 1fr;
+          justify-content: space-around;
+      }
+  }
+  
+  
+  @media (min-width:650px) and (max-width: 849px) {
+    .grid-container-circles {
+      justify-content: space-around;
+      grid-column-gap: 30px;
+      grid-template-areas: 
+      'one one two two three three'
+      'four four four five five five';
+     }
+  
+     .grid-item:nth-child(1) {
+          grid-area: one;
+          justify-self: right;
+      }
+  
+      .grid-item:nth-child(2) {
+          grid-area: two;
+          justify-self: center;
+      }
+  
+      .grid-item:nth-child(3) {
+          grid-area: three;
+          justify-self: left;
+      }
+  
+      .grid-item:nth-child(4) {
+          grid-area: four;
+          margin-right: 0;
+          margin-top: -20px;
+      }
+  
+      .grid-item:nth-child(5) {
+          grid-area: five;
+          margin-left: 0;
+          margin-top: -20px;
+      } 
+  }
+  
+  @media (min-width:490px) and (max-width: 649px) {
+    .grid-container-circles {
+          justify-content: space-around;
+          grid-column-gap: 50px;
+          grid-template-areas: 
+          'one two'
+          'three three'
+          'four five';
+    }
+  
+     .grid-item {
+          height: 150px;
+          width: 150px;
+      }
+  
+     .grid-item:nth-child(1) {
+          grid-area: one;
+      }
+  
+      .grid-item:nth-child(2) {
+          grid-area: two;
+      }
+  
+      .grid-item:nth-child(3) {
+          grid-area: three;
+          justify-self: center;
+          margin-top: -70px;
+      }
+  
+      .grid-item:nth-child(4) {
+          grid-area: four;
+          margin-top: -70px;
+      }
+  
+      .grid-item:nth-child(5) {
+          grid-area: five;
+          margin-top: -70px;
+      } 
+  }
+  
+  @media (max-width: 489px) {
+  
+      .grid-container-circles {
+          width: 100%;
+          grid-template-columns: auto;
+      }
+  
+      .grid-item:nth-child(1) {
+          justify-self: left;
+      }
+  
+      .grid-item:nth-child(2) {
+          justify-self: right;  
+          margin-top: -30px;
+      }
+  
+      .grid-item:nth-child(3) {
+      justify-self: left;
+      margin-top: -30px;
+      }
+  
+      .grid-item:nth-child(4) {
+          justify-self: right;
+          margin-top: -30px;
+      }
+  
+      .grid-item:nth-child(5) {
+          justify-self: left;  
+          margin-top: -30px;
+      }
+  }
+
 
 .circle {
     display: flex;
-    height: 250px;
-    width: 250px;
+    height: 180px;
+    width: 180px;
     align-items: center;
     border-radius: 100%;
     background: linear-gradient(#eee, #2a2a2a, #bc8929);
     color: #fff;
     border: 5px solid rgb(240, 233, 233);
     text-align: center;
-    margin: 5px 20px;
-    font-size: 25px;
-    padding: 15px;   
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 10px;   
   }
 
 .circle:hover {
