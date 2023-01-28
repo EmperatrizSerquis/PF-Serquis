@@ -430,8 +430,8 @@ section {
 }
 
 .frame-shadow {
-    -webkit-box-shadow: 4px 4px 6px -3px #333!important;
-    box-shadow: 4px 4px 6px -3px #333!important;
+    -webkit-box-shadow: 6px 4px 6px -3px #333!important;
+    box-shadow: 6px 4px 6px -3px #333!important;
 }
 
 .inner-text {
@@ -615,12 +615,10 @@ section {
         align-items: center;
         margin-top: 100px;      
     }
-
-    
-.inner-text {
-
-    margin-left: 10px;
-}
+   
+    .inner-text {
+        margin-left: 10px;
+    }
 }
 
 #nosotros {
@@ -633,15 +631,9 @@ section {
     background-color: #fff;
 }
 
-.nosotros {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .nos {
     max-width: 50%;
-    padding: 100px 60px 40px;
+    padding: 80px 60px 40px;
     background: rgba(255,255,255,.8);
     height: 100vh;
 }
@@ -650,8 +642,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 1.8px;
     font-size: 40px;
-    font-weight: 700;
-    
+    font-weight: 700; 
 }
 
 .nosotros p {
@@ -690,7 +681,6 @@ section {
 }
 
 @media (max-width: 466px) {
-
     .nos {
         max-width: 100%;
         padding: 0px 15px;    
@@ -739,10 +729,8 @@ section {
 }
 
 .banner-dark2 a {
-    margin-bottom: 80px;
-     
+    margin-bottom: 80px;     
 }
-
 
 @media only screen and (min-width: 998px) and (max-width: 1200px){
     .banner-dark2 h2 {
@@ -815,6 +803,10 @@ section {
     width: 100%;
 }
 
+.formulario h2 {
+    text-align: center;
+}
+
 label{
     text-transform: uppercase;
     color: #eee;
@@ -861,6 +853,13 @@ textarea {
     font-size: 30px;
     margin-bottom: 15px;
     color: #B68D40;
+}
+
+.card-contacto {
+    box-shadow: 0 0 5px #000;
+    margin: 55px;
+    padding: 30px;
+    border-radius: 10% 0%;
 }
 
 footer {
@@ -964,7 +963,6 @@ footer .redes a i:hover{
         width: 60%;  
     }
 }
-
 
 /* pages */ 
 
@@ -1140,16 +1138,10 @@ footer .redes a i:hover{
     
 }
 
-.practica {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .practica-descripcion {
     float: right;
     max-width: 50%;
-    padding: 100px 60px 40px;
+    padding: 80px 60px 40px;
     background: rgba(255,255,255,.8);
     height: 100vh;
 }
@@ -1159,12 +1151,9 @@ footer .redes a i:hover{
     letter-spacing: 1.8px;
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 80px;
 }
 
 .practica p {
-    font-size: 23px;
-    line-height: 23px;
     margin-bottom: 15px;
 }
 
@@ -1172,4 +1161,26 @@ footer .redes a i:hover{
     font-size: 30px;
     margin-bottom: 15px;
     color: #B68D40;
+}
+
+@media (max-width: 466px) {
+    .practica-descripcion {
+        max-width: 100%;
+        padding: 0px 15px;    
+    }
+}
+
+@media only screen and (min-width: 467px) and (max-width: 600px) {
+    .practica-descripcion {
+        max-width: 80%;
+        padding: 50px 20px 0px;    
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+    .practica-descripcion {
+        max-width: 60%;
+        padding: 50px 20px 0px;    
+    }   
 }
