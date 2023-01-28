@@ -638,7 +638,7 @@ section {
 
 .nos {
     max-width: 50%;
-    padding: 80px 60px 40px;
+    padding: 80px 60px 60px;
     background: rgba(255,255,255,.8);
     height: 100vh;
 }
@@ -688,7 +688,7 @@ section {
 @media (max-width: 466px) {
     .nos {
         max-width: 100%;
-        padding: 0px 15px;    
+        padding: 25px 15px;    
     }
     .circulito {
         margin-bottom: 10px;
