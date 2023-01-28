@@ -162,6 +162,7 @@ h1 {
 
 .boton {
     text-decoration: none;
+    display: inline-block;
     padding: 10px 15px;  
     font-size: 20px;
     background: #B68D40;
@@ -185,6 +186,7 @@ h1 {
 
 .boton-alt {
     text-decoration: none;
+    display: inline-block;
     padding: 10px 30px;  
     font-size: 20px;
     background: #2a2a2a;
@@ -199,10 +201,12 @@ h1 {
 
 .boton-alt:hover {
     background-color: #B68D40;
+    color: #fff;
 }
 
 .boton-small {
     text-decoration: none;
+    display: inline-block;
     padding: 6px 10px;  
     font-size: 14px;
     background: #B68D40;
@@ -378,7 +382,6 @@ marquee {
           margin-top: -30px;
       }
   }
-
 
 .circle {
     display: flex;
@@ -606,13 +609,18 @@ section {
   }
 
 @media (max-width: 766px) {
-
     .testimonios .testi {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 100px;      
     }
+
+    
+.inner-text {
+
+    margin-left: 10px;
+}
 }
 
 #nosotros {
@@ -1000,11 +1008,6 @@ footer .redes a i:hover{
     text-decoration: none;
 }
 
-.container-info {
-    margin: 100px auto;
-    max-width: 80%;
-}
-
 .inner-center {
     text-align: center;
 }
@@ -1042,30 +1045,9 @@ footer .redes a i:hover{
     margin-bottom: 100px !important;
 }
 
-.features {
-    max-width: 80%;
-    margin: 50px auto;
-}
-
-.feature {
-    display: inline-block;
-    width: 30%;
-    min-height: 350px;
-    background-color: #2a2a2a;
-    color: #eee;
-    border: 1ps solid #000;
-    padding: 40px 25px;
-    margin-bottom: 20px;
-    text-align: center;   
-}
-
-.feature-doble {
-    height: 400px;
-    width: 45%;
-}
-
 .inner-left {
     text-align: left;
+    margin: 100px 10px;
 }
 
 .inner-left h2 {
@@ -1077,13 +1059,39 @@ footer .redes a i:hover{
 }
 
 .inner-left p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 25px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.feature {
+    width: 30%;
+    min-height: 400px;
+    background-color: #2a2a2a;
+    color: #eee;
+    border: 1ps solid #000;
+    padding: 40px 10px;
+    margin-bottom: 20px;
+    text-align: center; 
+    flex: 1 1 auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .feature h2 {
     color: #B68D40;
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: 1.8px;
     margin-bottom: 20px;
     border-bottom: 2px solid #B68D40;
@@ -1093,11 +1101,32 @@ footer .redes a i:hover{
 
 .feature p {  
     margin-bottom: 20px;
+    flex: 1 1 auto;
 }
 
 .features a {
     color: #eee;
     text-decoration: none;
+    margin: 0 auto;
+}
+
+/* vista mobile */
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+    .features {
+        flex-direction: column;
+    }
+    .feature {
+        width: 100%;  
+    }
+    .inner-left h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .feature {
+        width: 45%;  
+    }
 }
 
 #practica {
