@@ -961,6 +961,11 @@ footer .redes a i:hover{
     .cto {
         width: 90%;  
     }
+    .card-contacto {
+        margin: 5px;
+        padding: 15px;
+
+    }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
