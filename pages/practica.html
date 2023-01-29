@@ -63,7 +63,7 @@
     <section class="hero">      
         <div class="page-title">
             <h1>PRÁCTICA PROFESIONAL Abogados Accidentes </h1>
-            <p> <a href="../index.html">.Home</a> .  <a href="practicas.html">Prácticas Profesionales</a></p>
+            <p> <a class="bread" href="../index.html">.Home</a> .  <a class="bread" href="practicas.html">Prácticas Profesionales</a></p>
             <a class="boton" href="#contacto">PRIMERA CONSULTA GRATUITA</a>
         </div>
     </section>
@@ -85,9 +85,10 @@
             <div class="practica-descripcion">
                 <h2>Cómo podemos ayudarte</h2>
                 <div class="circulito"></div>
-                <p> <i class="fa-solid fa-check"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ipsum magni, obcaecati deleniti minus earum ipsa quas facilis deserunt. Fugiat exercitationem quia provident ratione dicta iure veniam rerum repellendus. Reprehenderit.</p>
-                <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ipsum magni, obcaecati deleniti minus earum ipsa quas facilis deserunt. Fugiat exercitationem quia provident ratione dicta iure veniam rerum repellendus. Reprehenderit.</p>
-                
+                <div class="text-content">
+                    <p> <i class="fa-solid fa-check"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ipsum magni, obcaecati deleniti minus earum ipsa quas facilis deserunt. Fugiat exercitationem quia provident ratione dicta iure veniam rerum repellendus. Reprehenderit.</p>
+                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ipsum magni, obcaecati deleniti minus earum ipsa quas facilis deserunt. Fugiat exercitationem quia provident ratione dicta iure veniam rerum repellendus. Reprehenderit.</p>
+                </div>               
             </div>
         </div>
     </section>
@@ -127,9 +128,8 @@
 
     <!-- SECTION Testimonials Start -->
     <section class="container-fluid testimonios">
-        <div class="cuadrado mb-5">
-            <h2>QUE DICEN NUESTROS CLIENTES</h2>
-        </div>
+        <h2 >QUE DICEN NUESTROS CLIENTES</h2>
+        <div class="love"></div>
         <div class="row testi">
             <div class="col-md-6 col-lg-4  ">
                 <div class="testimonio frame-shadow">
@@ -165,19 +165,25 @@
     <section class="container" id="contacto">
         <div class="row">
             <div class="col-lg-6">
-                <div class="m-5">
-                    <h2>Podés contactarnos:</h2>
-                    <p> <i class="fa-solid fa-check"></i> VÍA WHATSAPP <a href=" https://wa.me/5491155746175?text=Hola%20Abogados%20quisiera%20consultar%20por%20" target="_blank">
-                        <i class="fa-brands fa-whatsapp" style="color:green;"> </i>
-                    </a> .</p>
-                    <p><i class="fa-solid fa-check"></i> Teléfono: <i class="fa-solid fa-phone"></i> 11 5574-6175</p>
-                    <p><i class="fa-solid fa-check"></i> Email: &nbsp;<i class="fa-solid fa-envelope"></i> hola@mail.com</p>
-                    <p><i class="fa-solid fa-check"></i>Completando el Formulario</p>
-                    <p><i class="fa-solid fa-check"></i> Seguinos: <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>  
-                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
-    
+                <div class="mb-5">
+                    <div class="card card-contacto frame-shadow">
+                        <div class="card-body">
+                            <h2 class="mt-4">Podés contactarnos:</h2>
+                            <div class="circulito"></div>
+                            <div class="contacto-details">
+                                <p> <i class="fa-solid fa-check"></i> VÍA WHATSAPP <a href=" https://wa.me/5491155746175?text=Hola%20Abogados%20quisiera%20consultar%20por%20" target="_blank">
+                                    <i class="fa-brands fa-whatsapp whatp"> </i>
+                                </a> </p>
+                                <p><i class="fa-solid fa-check"></i> Teléfono: <i class="fa-solid fa-phone"></i> 11 5574-6175</p>
+                                <p><i class="fa-solid fa-check"></i> Email: &nbsp;<i class="fa-solid fa-envelope"></i> hola@mail.com</p>
+                                <p><i class="fa-solid fa-check"></i>Completando el Formulario</p>
+                                <p><i class="fa-solid fa-check"></i> Seguinos: <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>  
+                                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
+                            </div>
+                        </div>                        
+                    </div>
                     <div class="mensaje">RESPONDEREMOS TODAS TUS INQUIETUDES</div>
                 </div>               
             </div>
@@ -207,6 +213,7 @@
                             <div class="form">
                                <input type="submit" value="Enviar formulario"/>
                             </div>
+                            
                         </form>
                     </div>               
                 </div>
@@ -256,8 +263,12 @@
                          📳 11 5574-6175  </p>
                     </div>  
                 </div>
-            </div>  
-        <p>All Rights Reserved 2023</p>        
+            </div>
+            
+
+   
+        <p>All Rights Reserved 2023</p>
+        
     </footer>
 
     <a class="subir" href="#"><i class="fa-solid fa-angle-up"></i></a>

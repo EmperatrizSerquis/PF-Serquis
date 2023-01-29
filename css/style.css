@@ -22,6 +22,10 @@ h1, h2, h3 {
     text-align: center;
 }
 
+.text-content {
+    margin-top: 50px;
+}
+
 a:hover {
     color: orange;
 }
@@ -152,8 +156,9 @@ main {
 
 h1 {
     color: #eee;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
 }
 
 .cto p {
@@ -167,15 +172,15 @@ h1 {
     font-size: 20px;
     background: #B68D40;
     color: #fff;
-    margin-left: auto;
     text-transform: uppercase;
     position: relative;
     letter-spacing: 1.4px;
     opacity: 1 !important;
     cursor: pointer;
+    text-align: center;
 }
 
-.boton {
+.boton, .boton-alt {
     transition: padding 1.5s;
 }
 
@@ -202,6 +207,7 @@ h1 {
 .boton-alt:hover {
     background-color: #B68D40;
     color: #fff;
+    padding: 20px 30px; 
 }
 
 .boton-small {
@@ -221,6 +227,7 @@ h1 {
 
 .boton-small:hover {
     background-color: #2a2a2a;
+    border: 2px solid #B68D40;
 }
 
 .info-black {
@@ -430,8 +437,13 @@ section {
 }
 
 .frame-shadow {
-    -webkit-box-shadow: 6px 4px 6px -3px #333!important;
-    box-shadow: 6px 4px 6px -3px #333!important;
+    -webkit-box-shadow: 5px 4px 5px -3px #333!important;
+    box-shadow: 5px 4px 5px -3px #333!important;
+}
+
+.frame-shadow:hover {
+    -webkit-box-shadow: 5px 4px 5px -3px #B68D40!important;
+    box-shadow: 5px 4px 5px -3px #B68D40!important;
 }
 
 .inner-text {
@@ -440,7 +452,7 @@ section {
 }
 
 .inner-text h2 {
-    margin: 80px auto;
+    margin: 80px auto 10px;
     font-weight: 600;
     line-height: 1.1;
     text-transform: uppercase;
@@ -454,6 +466,7 @@ section {
 }
 
 .inner-text ul {
+    margin-top: 50px;
     list-style: none;
     width: 100%;
 }
@@ -489,8 +502,9 @@ section {
 
 .text-image {
     position: absolute;
-    bottom: 250px;
-    left: 80px;
+    top: 50px;
+    left: 40px;
+    margin: 15px 20px;
 }
 
 .text-image h3 {
@@ -545,21 +559,20 @@ section {
     }
 
     .banner-dark1 a {
-        padding: 10px 5px;
+        padding: 10px 7px;
         font-size: 16px;
     }
 }
 
 .testimonios {
     margin: 100px auto 150px;
-    padding: 0 50px;
-    
+    padding: 0 50px;    
 }
 
 .testimonios h2 {
     font-size: 40px;
     letter-spacing: 1.8px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .testimonios .testi {
@@ -584,33 +597,47 @@ section {
     margin-bottom: 15px;
 }
 
-.cuadrado {
-    width: 100%;
-    height: 50px;
-    border: 2px solid #e4c791; 
-
+.love {
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background: red;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    animation: beating 2s ease infinite;
   }
-
-  .cuadrado:hover {
-    width: 100%;
-    height: 50px;
-    border: 2px solid #eee; 
-  }
-
-  @keyframes cuadrado-anima{
-    0%{
-        transform: translateX(0px);
-    }
-    100%{
-        transform: translateX(500px);
-    }
-}
   
-  .cuadrado {
-    animation-name: cuadrado-anima;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  @keyframes beating {
+    0% {
+        transform: rotate(45deg) scale(1);
+    }
+    50% {
+      transform: rotate(45deg) scale(1.5);
+    }
+    100% {
+        transform: rotate(45deg) scale(1);
+    }
+  }
+  
+  .love:before,
+  .love:after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+  
+  }
+  
+  .love:before {
+    top: 0;
+    left: -10px;
+  }
+
+  .love:after {
+    top: -10px;
   }
 
 @media (max-width: 766px) {
@@ -618,7 +645,7 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 100px;      
+        margin-top: 10px;      
     }
    
     .inner-text {
@@ -637,6 +664,7 @@ section {
 }
 
 .nos {
+    float: right;
     max-width: 50%;
     padding: 80px 60px 60px;
     background: rgba(255,255,255,.8);
@@ -666,7 +694,6 @@ section {
     border-radius: 50%; 
     border: 2px solid #B68D40; 
     transition: all 10s ease-in-out;
-    margin-bottom: 50px;
 }
 
 .circulito:hover {
@@ -676,9 +703,12 @@ section {
 }
 
 @keyframes circulito-animation {
-    0%   {transform: scale(1);transform: translateX(0%);}
-    50%  {transform: scale(1.2);transform: translateX(100px);}
-    100% {transform: scale(0);transform: translateX(100%);}
+    0%   {transform: translateX(0%);}
+    50%  {
+            transform: translateX(200px);
+            background-color: #B68D40;
+        }
+    100% {transform: translateX(100%);}
 }
 
 .circulito {
@@ -688,7 +718,7 @@ section {
 @media (max-width: 466px) {
     .nos {
         max-width: 100%;
-        padding: 25px 15px;    
+        padding: 50px 15px 25px;    
     }
     .circulito {
         margin-bottom: 10px;
@@ -713,10 +743,12 @@ section {
 }
 
 .banner-dark2 {
-   height: 430px;
-    padding: 30px 0px;
-    flex-shrink: initial;
+    height: 100%;
+   padding: 30px 0px;
+   flex-shrink: initial;
+   margin-top: 0px;
 }
+
 .banner-dark2 h2 {
     width: 60%;
     margin: 0 auto;
@@ -755,17 +787,11 @@ section {
         width: 90%;
         font-size: 35px;        
     }
-
-    .banner-dark2 {
-        height: 600px;
-    }
-    
 }
 
-#contacto h2 {
-    margin: 50px 0;
+.contacto-details {
+    margin-top: 40px;
 }
-
 
 #contacto i {
     color: #B68D40;
@@ -777,11 +803,22 @@ section {
     color: #999;
 }
 
+#contacto .whatp {
+    color: #3da733;
+    font-size: 35px;
+    margin-left: 10px;
+} 
+
 #contacto .mensaje {
     margin-top: 50px;
     border: 2px solid #B68D40;
     padding: 15px;
     text-align: center;
+}
+
+.card-contacto .card-body {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
 }
 
 .form {
@@ -791,6 +828,7 @@ section {
 .formulario {
     max-width: 100%;
     margin-bottom: 50px;
+    padding-top: 60px;
 }
 
 .formulario .inner-form {
@@ -861,7 +899,6 @@ textarea {
 }
 
 .card-contacto {
-    box-shadow: 0 0 5px #000;
     margin: 55px;
     padding: 30px;
     border-radius: 10% 0%;
@@ -947,8 +984,8 @@ footer .redes a i:hover{
 
 .whatsapp {
     position: fixed;
-    bottom: 40px;
-    left: 3%;
+    bottom: 45px;
+    left: 4%;
     z-index: 100;
 }
 
@@ -977,8 +1014,7 @@ footer .redes a i:hover{
 /* pages */ 
 
 .hero {
-    height: calc(60vh - 80px);
-    height: 60vh;
+    height: calc(70vh - 80px);
     width: 100%;
     background-color: #2a2a2a;
     background-image: url(../img/blog.jpg);
@@ -989,10 +1025,10 @@ footer .redes a i:hover{
 
 .hero .page-title {
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     left: 8%;
     color: #fff;      
-    padding: 20px;
+    padding: 25px 12px;
     font-family: 'Roboto', sans-serif;
     text-align: left;  
 }
@@ -1016,6 +1052,11 @@ footer .redes a i:hover{
     text-decoration: none;
 }
 
+.hero .bread:hover {
+    color: rgb(62, 61, 61);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
 .inner-center {
     text-align: center;
 }
@@ -1033,8 +1074,12 @@ footer .redes a i:hover{
 }
 
 .botones {
-    margin: 10px auto;
+    margin: 100px auto;
     text-align: center;
+}
+
+.m-100 {
+    margin: 100px;
 }
 
 .mt-50 {
@@ -1120,6 +1165,9 @@ footer .redes a i:hover{
 
 /* vista mobile */
 @media only screen and (min-width: 0px) and (max-width: 599px) {
+    .hero {
+        height: 80vh;
+    }
     .features {
         flex-direction: column;
     }
