@@ -526,8 +526,6 @@ section {
 }
 
 .banner-dark {
-    margin: 50px 0px;
-    
     background-color: #000;
     color: #fff;
     text-align: center;
@@ -554,10 +552,6 @@ section {
 }
 
 @media (max-width: 455px) {
-    .banner-dark {
-        height: 400px;
-    }
-
     .banner-dark1 a {
         padding: 10px 7px;
         font-size: 16px;
