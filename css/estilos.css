@@ -261,6 +261,209 @@ header .navbar .navbar-collapse .accion {
     transform: rotate(45deg) scale(1);
   }
 }
+main {
+  height: calc(100vh - 80px);
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+  background-image: url(../img/lawblack.jpg);
+  background-size: cover;
+  background-position: center top 3px;
+  position: relative;
+}
+main .cto {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  color: #fff;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #B68D40;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+}
+main .cto h1 {
+  color: #eee;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 10px #333;
+}
+main .cto p {
+  margin-bottom: 25px;
+}
+
+marquee {
+  display: flex;
+  text-align: center;
+  background-color: #eee;
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 3px solid #B68D40;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 20px;
+  color: #B68D40;
+  margin-bottom: 0px;
+}
+
+.grid-container-circles {
+  margin: 50px auto;
+  width: 100%;
+  height: auto;
+  display: grid;
+}
+.grid-container-circles .grid-item {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.grid-container-circles .circle {
+  display: flex;
+  height: 180px;
+  width: 180px;
+  align-items: center;
+  border-radius: 100%;
+  color: #fff;
+  background: linear-gradient(#eee, #2a2a2a, #B68D40);
+  border: 5px solid rgb(240, 233, 233);
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 2s ease-in-out;
+  animation: circle-animation 2s;
+}
+.grid-container-circles .circle:hover {
+  background: linear-gradient(#B68D40, #eee, #B68D40);
+  color: #000;
+  border: 5px solid #B68D40;
+}
+.grid-container-circles .circle a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.grid-container-circles .circle a:hover {
+  color: #000;
+}
+
+@keyframes circle-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (min-width: 850px) {
+  .grid-container-circles {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 650px) and (max-width: 849px) {
+  .grid-container-circles {
+    justify-content: space-around;
+    grid-column-gap: 30px;
+    grid-template-areas: "one one two two three three" "four four four five five five";
+  }
+  .grid-item:nth-child(1) {
+    grid-area: one;
+    justify-self: right;
+  }
+  .grid-item:nth-child(2) {
+    grid-area: two;
+    justify-self: center;
+  }
+  .grid-item:nth-child(3) {
+    grid-area: three;
+    justify-self: left;
+  }
+  .grid-item:nth-child(4) {
+    grid-area: four;
+    margin-right: 0;
+    margin-top: -20px;
+  }
+  .grid-item:nth-child(5) {
+    grid-area: five;
+    margin-left: 0;
+    margin-top: -20px;
+  }
+}
+@media (min-width: 490px) and (max-width: 649px) {
+  .grid-container-circles {
+    justify-content: space-around;
+    grid-column-gap: 50px;
+    grid-template-areas: "one two" "three three" "four five";
+  }
+  .grid-item {
+    height: 150px;
+    width: 150px;
+  }
+  .grid-item:nth-child(1) {
+    grid-area: one;
+  }
+  .grid-item:nth-child(2) {
+    grid-area: two;
+  }
+  .grid-item:nth-child(3) {
+    grid-area: three;
+    justify-self: center;
+    margin-top: -70px;
+  }
+  .grid-item:nth-child(4) {
+    grid-area: four;
+    margin-top: -70px;
+  }
+  .grid-item:nth-child(5) {
+    grid-area: five;
+    margin-top: -70px;
+  }
+}
+@media (max-width: 489px) {
+  .grid-container-circles {
+    width: 100%;
+    grid-template-columns: auto;
+  }
+  .grid-item:nth-child(1) {
+    justify-self: left;
+  }
+  .grid-item:nth-child(2) {
+    justify-self: right;
+    margin-top: -30px;
+  }
+  .grid-item:nth-child(3) {
+    justify-self: left;
+    margin-top: -30px;
+  }
+  .grid-item:nth-child(4) {
+    justify-self: right;
+    margin-top: -30px;
+  }
+  .grid-item:nth-child(5) {
+    justify-self: left;
+    margin-top: -30px;
+  }
+}
+.frame-shadow {
+  box-shadow: 5px 4px 5px -3px #333 !important;
+}
+.frame-shadow:hover {
+  box-shadow: 5px 4px 5px -3px #B68D40 !important;
+}
+
 .inner-text {
   height: 100%;
   margin-left: 100px;

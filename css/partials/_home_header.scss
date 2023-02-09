@@ -1,0 +1,49 @@
+main {
+    height: calc(100vh - 80px);
+    height: 100vh;
+    width: $s100;
+    background-color: $grisOscuro;
+    background-image: url(../img/lawblack.jpg);
+    background-size: cover;
+    background-position:  center top 3px;
+    position: relative;
+
+    .cto {
+        position: absolute;
+        bottom: 15%;
+        left: 10%;
+        color: $white;
+        width: 30%;  
+        background-color: $mainShadow;
+        border-bottom: 2px solid $mainColor;
+        padding: 20px;
+        font-family: $fontH;
+        text-align: left;   
+
+        h1 {
+            color: $blanco;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            text-shadow: $textShadowBig;
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+marquee {
+    display: flex;
+    text-align: center;
+    background-color: $blanco;
+    border-top: 1px solid $myBlack;
+    border-bottom: 3px solid $mainColor; 
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 20px;
+    color: $mainColor;
+    margin-bottom: 0px;
+}
