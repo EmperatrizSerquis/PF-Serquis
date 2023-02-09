@@ -1,6 +1,8 @@
 .inner-text {
+
 	height: 100%;
 	margin-left: 100px;
+
 	h2 {
 		margin: 80px auto 10px;
 		font-weight: 600;
@@ -9,18 +11,22 @@
 		font-size: 40px;
 		letter-spacing: 1.8px;
 	}
+
 	p {
 		font-size: 24px;
 		line-height: 1.1;
 	}
+
 	ul {
 		margin-top: 50px;
 		list-style: none;
 		width: 100%;
+
 		li {
 			margin-bottom: 55px;
 			width: 100%;
 			font-size: 30px;
+
 			a {
 				text-decoration: none;
 				color: $myBlack;
@@ -31,6 +37,7 @@
 				padding: 15px;
 				border-bottom: 1px dotted $myBlack;
 				margin-bottom: 50px;
+                
 				&:hover {
 					text-decoration: none;
 					color: $myGris;

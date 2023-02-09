@@ -80,6 +80,7 @@
     }
 
     .grid-item {
+
 		&:nth-child(1) {
 			grid-area: one;
 			justify-self: right;
@@ -92,15 +93,14 @@
 			grid-area: three;
 			justify-self: left;
 		}
+
 		&:nth-child(4) {
 			grid-area: four;
-			margin-right: 0;
-			margin-top: -20px;
+            @include margenes(0,-20px);
 		}
 		&:nth-child(5) {
 			grid-area: five;
-			margin-left: 0;
-			margin-top: -20px;
+            @include margenes(0,-20px);
 		}
 	}
 }

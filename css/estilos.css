@@ -46,6 +46,10 @@ section {
   box-shadow: 5px 4px 5px -3px #B68D40 !important;
 }
 
+.bg-micolor {
+  background-color: #B68D40;
+}
+
 header {
   width: 100%;
   text-transform: capitalize;
@@ -401,7 +405,7 @@ marquee {
   }
   .grid-item:nth-child(5) {
     grid-area: five;
-    margin-left: 0;
+    margin-right: 0;
     margin-top: -20px;
   }
 }
@@ -638,9 +642,160 @@ marquee {
 .juanito:hover {
   background-color: #2a2a2a;
   color: #eee;
+  background-color: #B68D40;
 }
 
 .pedrito:hover {
   background-color: #2a2a2a;
   color: #eee;
+}
+
+#nosotros {
+  background-image: url("../img/porque.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#nosotros .nosotros .nos h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 40px;
+  font-weight: 700;
+}
+#nosotros .nosotros .nos p {
+  margin-bottom: 15px;
+}
+#nosotros .nosotros .nos i {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #B68D40;
+}
+
+.nos {
+  float: right;
+  max-width: 50%;
+  padding: 80px 60px 60px;
+  background: rgba(255, 255, 255, 0.8);
+  height: 100vh;
+}
+
+.nosotros h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.nosotros p {
+  margin-bottom: 15px;
+}
+.nosotros i {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #B68D40;
+}
+
+#contacto .card-contacto {
+  margin: 55px;
+  padding: 30px;
+  border-radius: 10% 0%;
+}
+#contacto .card-contacto .card-body {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+#contacto .card-contacto .card-body .contacto-details {
+  margin-top: 40px;
+}
+#contacto .card-contacto .card-body .contacto-details i {
+  color: #B68D40;
+  font-size: 25px;
+  margin-right: 10px;
+}
+#contacto .card-contacto .card-body .contacto-details i:hover {
+  color: #999;
+}
+#contacto .card-contacto .card-body .contacto-details i .whatp {
+  color: #3da733;
+  font-size: 35px;
+  margin-left: 10px;
+}
+#contacto .mensaje {
+  margin-top: 50px;
+  border: 2px solid #B68D40;
+  padding: 15px;
+  text-align: center;
+}
+
+.form {
+  margin-top: -50px;
+}
+.form .f-banner {
+  padding-top: 100px;
+}
+.form .formulario {
+  max-width: 100%;
+  margin-bottom: 50px;
+  padding-top: 60px;
+}
+.form .formulario .inner-form {
+  margin: 30px;
+}
+.form .formulario p {
+  color: #eee;
+  margin-bottom: 50px;
+}
+.form .formulario .form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.form .formulario .form label {
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 25px;
+}
+.form .formulario .form input[type=submit] {
+  text-decoration: none;
+  padding: 10px 30px;
+  font-size: 20px;
+  background: #2a2a2a;
+  color: #fff;
+  margin-left: auto;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 1.4px;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+.form .formulario .form input[type=text] {
+  padding: 10px 15px;
+  width: 100%;
+  background-color: #fff;
+}
+.form .formulario .form textarea {
+  width: 100%;
+  font-size: 20px;
+  background-color: #fff;
+}
+.form .formulario h2 {
+  text-align: center;
+}
+
+.contacto h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+.contacto .con p {
+  margin-bottom: 15px;
+}
+.contacto i {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #B68D40;
 }/*# sourceMappingURL=estilos.css.map */

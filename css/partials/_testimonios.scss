@@ -30,9 +30,18 @@
     }
 }
 
-@each $testimonio in pepito, juanito , pedrito {
+$nombres:
+pepito,
+juanito,
+pedrito;
+
+@each $testimonio in $nombres {
     .#{$testimonio}:hover  {
         background-color: $myBlack;
         color: $blanco;
+
+        @if $testimonio == juanito {
+            background-color: $mainColor;
+        }
     }
 }

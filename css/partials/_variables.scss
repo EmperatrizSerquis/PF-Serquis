@@ -27,3 +27,8 @@ $fs18: 18px;
 $m50: 50px;
 
 $s100: 100%;
+
+@mixin margenes ($right, $top) {
+    margin-right: $right;
+    margin-top: $top;
+}
