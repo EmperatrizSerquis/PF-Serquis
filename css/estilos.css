@@ -601,4 +601,46 @@ marquee {
 }
 .banner-dark2 a {
   margin-bottom: 70px;
+}
+
+.testimonios {
+  margin: 100px auto 150px;
+  padding: 0 50px;
+}
+.testimonios h2 {
+  font-size: 40px;
+  letter-spacing: 1.8px;
+  margin-bottom: 40px;
+}
+.testimonios .testi {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.testimonios .testi .testimonio {
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+.testimonios .testi .testimonio:hover {
+  box-shadow: 4px 4px 6px -3px #B68D40 !important;
+}
+.testimonios .testi .testimonio h4 {
+  margin-bottom: 15px;
+}
+
+.pepito:hover {
+  background-color: #2a2a2a;
+  color: #eee;
+}
+
+.juanito:hover {
+  background-color: #2a2a2a;
+  color: #eee;
+}
+
+.pedrito:hover {
+  background-color: #2a2a2a;
+  color: #eee;
 }/*# sourceMappingURL=estilos.css.map */

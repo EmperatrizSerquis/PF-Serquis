@@ -1,0 +1,38 @@
+.testimonios {
+    margin: 100px auto 150px;
+    padding: 0 50px;
+
+    h2 {
+        font-size: 40px;
+        letter-spacing: 1.8px;
+        margin-bottom: 40px;
+    }
+
+    .testi {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+
+        .testimonio {
+            padding: 20px;
+            border: 1px solid #fff;
+            border-radius: 20px;
+            margin-top: 25px;
+
+            &:hover {
+                box-shadow: 4px 4px 6px -3px #B68D40 !important;
+            }
+
+            h4 {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@each $testimonio in pepito, juanito , pedrito {
+    .#{$testimonio}:hover  {
+        background-color: $myBlack;
+        color: $blanco;
+    }
+}
