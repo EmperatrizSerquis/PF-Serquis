@@ -1,0 +1,341 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;500;700&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-moz-selection {
+  background-color: black;
+  color: #B68D40;
+}
+*::selection {
+  background-color: black;
+  color: #B68D40;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-content {
+  margin-top: 50px;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  color: #2a2a2a;
+}
+
+.frame-shadow {
+  box-shadow: 5px 4px 5px -3px #333 !important;
+}
+.frame-shadow:hover {
+  box-shadow: 5px 4px 5px -3px #B68D40 !important;
+}
+
+header {
+  width: 100%;
+  text-transform: capitalize;
+  position: sticky;
+  top: 0;
+  background-color: #2a2a2a;
+  z-index: 11;
+}
+header .navbar {
+  width: 100%;
+  height: 80px;
+  color: #fff;
+}
+header .navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+header .navbar .logo a {
+  color: #fff;
+  text-decoration: none;
+}
+header .navbar .logo a:hover {
+  color: #B68D40;
+}
+header .navbar .logo a:active {
+  color: #B68D40;
+}
+header .navbar .logo a span {
+  color: #B68D40;
+}
+header .navbar .logo a span:hover {
+  color: #fff;
+}
+header .navbar .logo:hover {
+  color: #B68D40;
+}
+header .navbar .logo:active {
+  color: #B68D40;
+}
+@media only screen and (max-width: 371px) {
+  header .navbar .logo {
+    font-size: 18px;
+  }
+}
+header .navbar .navbar-toggler-icon i {
+  padding-top: 5px;
+  color: #B68D40;
+}
+header .navbar .navbar-collapse .navbar-nav {
+  margin: 0 auto;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item {
+  text-align: center;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #2a2a2a;
+  border: 1px solid #2a2a2a;
+  transition: all 1s ease-in-out;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item a:hover {
+  color: #B68D40;
+  border: 1px solid #B68D40;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item a:active {
+  color: #B68D40;
+  border: 1px solid #B68D40;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item a:active:focus {
+  color: #B68D40;
+}
+header .navbar .navbar-collapse .accion {
+  height: 80px;
+  color: #fff;
+  margin-right: 25px;
+  background-color: #000;
+  border: 3px solid #999;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  justify-content: center;
+  box-shadow: 0 0 5px #fff;
+}
+@media only screen and (max-width: 991px) {
+  header .navbar .navbar-collapse .accion {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 371px) {
+  .logo {
+    font-size: 18px;
+  }
+}
+.boton, .boton-small, .boton-alt {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+  background: #B68D40;
+  color: #eee;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 1.4px;
+  opacity: 1 !important;
+  cursor: pointer;
+  text-align: center;
+  transition: padding 1.5s;
+}
+.boton:hover, .boton-small:hover, .boton-alt:hover {
+  background-color: #2a2a2a;
+  padding: 20px 30px;
+}
+
+.boton-alt {
+  padding: 10px 30px;
+  background: #2a2a2a;
+  margin-left: auto;
+}
+.boton-alt:hover {
+  background-color: #B68D40;
+  padding: 20px 30px;
+}
+
+.boton-small {
+  padding: 6px 10px;
+  font-size: 14px;
+  background: #B68D40;
+  margin-left: auto;
+  border: 2px solid #B68D40;
+}
+.boton-small:hover {
+  background-color: #2a2a2a;
+  border: 2px solid #B68D40;
+}
+
+.circulito {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #B68D40;
+  transition: all 10s ease-in-out;
+  animation: circulito-animation 10s ease-in-out infinite;
+}
+.circulito:hover {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #eee;
+}
+
+@keyframes circulito-animation {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(200px);
+    background-color: #B68D40;
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@media only screen and (max-width: 466px) {
+  .circulito {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 467px) and (max-width: 600px) {
+  .circulito {
+    margin-bottom: 40px;
+  }
+}
+.love {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background: red;
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+  animation: beating 2s ease infinite;
+}
+.love:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+.love:after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  top: -10px;
+}
+
+@keyframes beating {
+  0% {
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(45deg) scale(1);
+  }
+}
+.inner-text {
+  height: 100%;
+  margin-left: 100px;
+}
+.inner-text h2 {
+  margin: 80px auto 10px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 1.8px;
+}
+.inner-text p {
+  font-size: 24px;
+  line-height: 1.1;
+}
+.inner-text ul {
+  margin-top: 50px;
+  list-style: none;
+  width: 100%;
+}
+.inner-text ul li {
+  margin-bottom: 55px;
+  width: 100%;
+  font-size: 30px;
+}
+.inner-text ul li a {
+  text-decoration: none;
+  color: #2a2a2a;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  background-color: #fff;
+  padding: 15px;
+  border-bottom: 1px dotted #2a2a2a;
+  margin-bottom: 50px;
+}
+.inner-text ul li a:hover {
+  text-decoration: none;
+  color: #606060;
+  box-shadow: 4px 4px 6px -3px #333 !important;
+}
+.inner-text ul li i {
+  color: #B68D40;
+  border-radius: 50%;
+}
+.inner-text ul li .i-1 {
+  background-color: #987635;
+}
+.inner-text ul li .i-2 {
+  background-color: #7a5e2b;
+}
+.inner-text ul li .i-3 {
+  background-color: #5b4720;
+}
+.inner-text ul li .i-4 {
+  background-color: #3d2f16;
+}
+.inner-text ul li .i-5 {
+  background-color: #1f180b;
+}
+
+.text-image {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  margin: 15px 20px;
+}
+.text-image h3 {
+  color: #fff;
+  font-size: 28px;
+  line-height: 1.2;
+  max-width: 400px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+}/*# sourceMappingURL=estilos.css.map */

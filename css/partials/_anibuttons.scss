@@ -1,0 +1,130 @@
+.boton {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;  
+    font-size: 20px;
+    background: $mainColor;
+    color: $blanco;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 1.4px;
+    opacity: 1 !important;
+    cursor: pointer;
+    text-align: center;
+    transition: padding 1.5s;
+
+    &:hover {
+        background-color: $myBlack;
+        padding: 20px 30px; 
+    }
+
+}
+
+.boton-alt {
+    @extend .boton;
+    padding: 10px 30px;  
+    background: $myBlack;
+    margin-left: auto;
+
+    &:hover {
+        background-color: $mainColor;
+        padding: 20px 30px; 
+    }
+}
+
+.boton-small {
+    @extend .boton;
+    padding: 6px 10px;  
+    font-size: 14px;  
+    background: $mainColor;
+    margin-left: auto;
+    border: 2px solid $mainColor;
+
+    &:hover {
+        background-color: $myBlack;
+        border: 2px solid $mainColor;
+    }
+}
+
+.circulito {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    border: 2px solid $mainColor; 
+    transition: all 10s ease-in-out;
+    animation: circulito-animation 10s ease-in-out infinite;
+
+    &:hover {
+        width: 10px;
+        height: 10px;
+        border: 2px solid #eee; 
+    }
+}
+
+@keyframes circulito-animation {
+	0% {
+		transform: translateX(0%);
+	}
+	50% {
+		transform: translateX(200px);
+		background-color: #B68D40;
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+@media only screen and (max-width: 466px) {
+    .circulito {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 467px) and (max-width: 600px) {
+    .circulito {
+        margin-bottom: 40px;
+    }
+}
+
+
+.love {
+	width: 20px;
+	height: 20px;
+	transform: rotate(45deg);
+	background: red;
+	position: relative;
+	top: 1rem;
+	left: 1rem;
+	animation: beating 2s ease infinite;
+	&:before {
+		content: "";
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		background: red;
+		position: absolute;
+		top: 0;
+		left: -10px;
+	}
+	&:after {
+		content: "";
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		background: red;
+		position: absolute;
+		top: -10px;
+	}
+}
+
+@keyframes beating {
+	0% {
+		transform: rotate(45deg) scale(1);
+	}
+	50% {
+		transform: rotate(45deg) scale(1.5);
+	}
+	100% {
+		transform: rotate(45deg) scale(1);
+	}
+}

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::selection {
+        background-color: black;
+        color: $mainColor;
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $fontBody;   
+}
+
+h1, h2, h3 {
+    font-family: $fontH;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-content {
+    margin-top: 50px;
+}
+
+section {
+	width: 100%;
+	height: 100%;
+	color: $myBlack;
+}
+
+.frame-shadow {
+	-webkit-box-shadow: 5px 4px 5px -3px $grisOscuro !important;
+	box-shadow: 5px 4px 5px -3px $grisOscuro !important;
+	&:hover {
+		-webkit-box-shadow: 5px 4px 5px -3px $mainColor !important;
+		box-shadow: 5px 4px 5px -3px $mainColor !important;
+	}
+}

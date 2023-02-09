@@ -71,23 +71,23 @@ header {
 .nav-item a {
     text-decoration: none;
     color: #fff;
- }
+}
 
 .nav-item a:hover {
     color: #333;
- }
+}
 
- .dropdown-menu {
+.dropdown-menu {
     color: #fff;
- }
+}
 
 
- .navbar a:hover,
- .navbar .active,
- .navbar .active:focus,
- .navbar li:hover > a {
-  color: #333;
-  background-color: transparent;
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+    color: #333;
+    background-color: transparent;
 }
 
 .navbar-collapse .show .navbar-nav {
@@ -114,7 +114,6 @@ header {
     text-align: center;
     font-size: 16px;
     justify-content: center;
- 
 }
 
 @media (max-width: 991px) {
@@ -257,10 +256,9 @@ marquee {
     width: 100%;
     height: auto;
     display: grid;
-  
   }
   
-  .grid-item {
+.grid-item {
     border-radius: 50%;
     height: 180px;
     width: 180px;
@@ -269,16 +267,15 @@ marquee {
     align-items: center;
     text-align: center;
     color: white;
-  }
+}
   
-  
-  @media (min-width: 850px) {
-      .grid-container-circles {
-          grid-template-columns: repeat(5, 1fr);
-          grid-template-rows: 1fr;
-          justify-content: space-around;
-      }
-  }
+@media (min-width: 850px) {
+    .grid-container-circles {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        justify-content: space-around;
+    }
+}
   
   
   @media (min-width:650px) and (max-width: 849px) {
