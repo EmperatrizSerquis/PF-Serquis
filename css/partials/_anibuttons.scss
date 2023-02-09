@@ -16,6 +16,7 @@
     &:hover {
         background-color: $myBlack;
         padding: 20px 30px; 
+        color: $mainColor;
     }
 
 }
@@ -28,7 +29,9 @@
 
     &:hover {
         background-color: $mainColor;
-        padding: 20px 30px; 
+        padding: 20px 30px;
+        color: $myBlack;
+
     }
 }
 
@@ -43,6 +46,7 @@
     &:hover {
         background-color: $myBlack;
         border: 2px solid $mainColor;
+        color: $mainColor;
     }
 }
 
