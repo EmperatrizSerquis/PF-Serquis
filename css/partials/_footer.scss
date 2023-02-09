@@ -1,0 +1,110 @@
+footer {
+
+	text-align: center;
+	font-size: 30px;
+	background-color: $black;
+	color: $blanco;
+	padding-top: 20px;
+
+	.logo {
+
+		span {
+			color: $mainColor;
+		}
+	}
+
+	.menu {
+
+		a {
+			color: $white;
+
+			&:hover {
+				color: $mainColor;
+			}
+		}
+	}
+
+	p {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+
+    .practices {
+        margin-bottom: 20px;
+
+        h4 {
+            color: #B68D40;
+        }
+
+        ul {
+            margin: 20px auto;
+            max-width: 300px;
+            list-style: none;
+            font-size: 20px;
+            margin-bottom: 20px;
+
+            li a {
+                text-decoration: none;
+                color: #fff;
+
+                &:hover {
+                    color: $mainColor;
+                }
+                
+            }
+        }
+    }
+    
+    footer .practices 
+    
+    footer  ul {
+        margin: 20px auto;
+        max-width: 300px;
+        list-style: none;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .redes {
+
+        i {
+            font-size: 30px;
+            letter-spacing: 28px;
+            color: $blanco;
+
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+
+    .accion {
+        justify-content: center;
+    }
+	
+}
+
+.subir {
+    height: 40px;
+    width: 40px;
+    background-color: #B68D40;
+    color: #fff;
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0 0 5px #fff;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 45px;
+    left: 4%;
+    z-index: 100;
+}
+
+.whatsapp img {
+    max-width: 60px;
+}

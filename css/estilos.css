@@ -50,6 +50,26 @@ section {
   background-color: #B68D40;
 }
 
+.m-100 {
+  margin: 100px;
+}
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+.mt-100 {
+  margin-top: 100px !important;
+}
+
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+
 header {
   width: 100%;
   text-transform: capitalize;
@@ -103,6 +123,9 @@ header .navbar .navbar-collapse .navbar-nav {
   margin: 0 auto;
 }
 header .navbar .navbar-collapse .navbar-nav .nav-item {
+  text-align: center;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item ul li {
   text-align: center;
 }
 header .navbar .navbar-collapse .navbar-nav .nav-item a {
@@ -298,6 +321,11 @@ main .cto h1 {
 }
 main .cto p {
   margin-bottom: 25px;
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  main .cto {
+    width: 60%;
+  }
 }
 
 marquee {
@@ -798,4 +826,192 @@ marquee {
   font-size: 30px;
   margin-bottom: 15px;
   color: #B68D40;
+}
+
+footer {
+  text-align: center;
+  font-size: 30px;
+  background-color: #000;
+  color: #eee;
+  padding-top: 20px;
+}
+footer .logo span {
+  color: #B68D40;
+}
+footer .menu a {
+  color: #fff;
+}
+footer .menu a:hover {
+  color: #B68D40;
+}
+footer p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+footer .practices {
+  margin-bottom: 20px;
+}
+footer .practices h4 {
+  color: #B68D40;
+}
+footer .practices ul {
+  margin: 20px auto;
+  max-width: 300px;
+  list-style: none;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+footer .practices ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .practices ul li a:hover {
+  color: #B68D40;
+}
+footer footer .practices footer ul {
+  margin: 20px auto;
+  max-width: 300px;
+  list-style: none;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+footer .redes i {
+  font-size: 30px;
+  letter-spacing: 28px;
+  color: #eee;
+}
+footer .redes i:hover {
+  color: #fff;
+}
+footer .accion {
+  justify-content: center;
+}
+
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: #B68D40;
+  color: #fff;
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 0 0 5px #fff;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 45px;
+  left: 4%;
+  z-index: 100;
+}
+
+.whatsapp img {
+  max-width: 60px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  .cto {
+    width: 90%;
+  }
+  .card-contacto {
+    margin: 5px;
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .cto {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 466px) {
+  .nos {
+    max-width: 100%;
+    padding: 50px 15px 25px;
+  }
+  .circulito {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 467px) and (max-width: 600px) {
+  .nos {
+    max-width: 80%;
+    padding: 50px 20px 0px;
+  }
+  .circulito {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  .nos {
+    max-width: 60%;
+    padding: 50px 20px 0px;
+  }
+}
+.hero {
+  height: calc(70vh - 80px);
+  width: 100%;
+  background-color: #2a2a2a;
+  background-image: url(../img/blog.jpg);
+  background-size: cover;
+  background-position: center top 3px;
+  position: relative;
+}
+.hero .page-title {
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  color: #fff;
+  padding: 25px 12px;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+}
+.hero .page-title h1 {
+  font-size: 45px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #B68D40;
+  letter-spacing: -2px;
+}
+.hero .page-title p {
+  margin-bottom: 35px;
+}
+.hero .page-title p .bread:hover {
+  color: rgb(62, 61, 61);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.inner-center {
+  text-align: center;
+}
+.inner-center h2 {
+  font-size: 40px;
+  letter-spacing: 1.8px;
+  margin-bottom: 70px;
+  color: #2a2a2a;
+  border-bottom: 2px solid #B68D40;
+}
+.inner-center p {
+  margin-bottom: 20px;
+}
+.inner-center .botones {
+  margin: 80px auto;
+  text-align: center;
+}
+
+.inner-left {
+  text-align: left;
+  margin: 100px 10px;
+}
+.inner-left h2 {
+  font-size: 40px;
+  letter-spacing: 1.8px;
+  margin-bottom: 60px;
+  color: #2a2a2a;
+  border-bottom: 2px solid #B68D40;
+}
+.inner-left p {
+  font-size: 18px;
+  line-height: 25px;
 }/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,43 @@
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+    .cto {
+        width: 90%;  
+    }
+    .card-contacto {
+        margin: 5px;
+        padding: 15px;
+
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .cto {
+        width: 60%;  
+    }
+}
+
+@media only screen and (max-width: 466px) {
+    .nos {
+        max-width: 100%;
+        padding: 50px 15px 25px;    
+    }
+    .circulito {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 467px) and (max-width: 600px) {
+    .nos {
+        max-width: 80%;
+        padding: 50px 20px 0px;    
+    }
+    .circulito {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+    .nos {
+        max-width: 60%;
+        padding: 50px 20px 0px;    
+    }   
+}

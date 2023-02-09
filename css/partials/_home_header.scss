@@ -31,6 +31,12 @@ main {
             margin-bottom: 25px;
         }
     }
+
+    @media only screen and (min-width: 600px) and (max-width: 1200px) {
+        .cto {
+            width: 60%;  
+        }
+    }
 }
 
 marquee {
@@ -47,3 +53,4 @@ marquee {
     color: $mainColor;
     margin-bottom: 0px;
 }
+
