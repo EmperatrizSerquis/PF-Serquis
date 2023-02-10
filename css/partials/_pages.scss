@@ -11,7 +11,7 @@
         position: absolute;
         bottom: 10%;
         left: 8%;
-        color: #fff;      
+        color: $white;      
         padding: 25px 12px;
         font-family: 'Roboto', sans-serif;
         text-align: left;  
@@ -19,7 +19,7 @@
         h1 {
             font-size: 45px;
             padding-bottom: 15px;
-            border-bottom: 2px solid #B68D40;
+            border-bottom: 2px solid $mainColor;
             letter-spacing: -2px;
         }
 
@@ -27,10 +27,19 @@
             margin-bottom: 35px;
 
             .bread:hover {
-                color: rgb(62, 61, 61);
+                color: $fondoGris;
                 text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
             }
         }
+
+        a {
+            color: $white;
+            margin-right: 10px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-decoration: none;
+        }
+        
 
     }
 }
@@ -43,7 +52,7 @@
         letter-spacing: 1.8px;
         margin-bottom: 70px;
         color: #2a2a2a;
-        border-bottom: 2px solid #B68D40;
+        border-bottom: 2px solid $mainColor;
     }
 
     p {   
@@ -66,7 +75,7 @@
         letter-spacing: 1.8px;
         margin-bottom: 60px;
         color: #2a2a2a;
-        border-bottom: 2px solid #B68D40;
+        border-bottom: 2px solid $mainColor;
     }
 
     p {

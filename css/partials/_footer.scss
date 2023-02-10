@@ -33,7 +33,7 @@ footer {
         margin-bottom: 20px;
 
         h4 {
-            color: #B68D40;
+            color: $mainColor;
         }
 
         ul {
@@ -45,7 +45,7 @@ footer {
 
             li a {
                 text-decoration: none;
-                color: #fff;
+                color: $white;
 
                 &:hover {
                     color: $mainColor;
@@ -73,7 +73,7 @@ footer {
             color: $blanco;
 
             &:hover{
-                color: #fff;
+                color: $white;
             }
         }
     }
@@ -87,15 +87,15 @@ footer {
 .subir {
     height: 40px;
     width: 40px;
-    background-color: #B68D40;
-    color: #fff;
+    background-color: $mainColor;
+    color: $white;
     position: fixed;
     right: 40px;
     bottom: 20px;
     font-size: 30px;
     text-align: center;
     line-height: 40px;
-    box-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 5px $white;
 }
 
 .whatsapp {

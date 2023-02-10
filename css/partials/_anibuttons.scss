@@ -71,7 +71,7 @@
 	}
 	50% {
 		transform: translateX(200px);
-		background-color: #B68D40;
+		background-color: $mainColor;
 	}
 	100% {
 		transform: translateX(100%);

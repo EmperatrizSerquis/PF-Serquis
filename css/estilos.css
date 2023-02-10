@@ -134,6 +134,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-item a {
   background-color: #2a2a2a;
   border: 1px solid #2a2a2a;
   transition: all 1s ease-in-out;
+  margin-right: 5px;
 }
 header .navbar .navbar-collapse .navbar-nav .nav-item a:hover {
   color: #B68D40;
@@ -981,6 +982,13 @@ footer .accion {
   color: rgb(62, 61, 61);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
+.hero .page-title a {
+  color: #fff;
+  margin-right: 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
 
 .inner-center {
   text-align: center;
@@ -1014,4 +1022,68 @@ footer .accion {
 .inner-left p {
   font-size: 18px;
   line-height: 25px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto;
+}
+.features .feature {
+  width: 30%;
+  min-height: 400px;
+  background-color: #2a2a2a;
+  color: #eee;
+  border: 1ps solid #000;
+  padding: 40px 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  flex: 1 1 auto;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.features .feature h2 {
+  color: #B68D40;
+  font-size: 28px;
+  letter-spacing: 1.8px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #B68D40;
+  text-transform: uppercase;
+  text-align: center;
+}
+.features .feature p {
+  margin-bottom: 20px;
+  flex: 1 1 auto;
+}
+.features .feature a {
+  color: #eee;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+/* vista mobile */
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  .hero {
+    height: 80vh;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .feature {
+    width: 100%;
+  }
+  .inner-left h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .feature {
+    width: 45%;
+  }
 }/*# sourceMappingURL=estilos.css.map */
