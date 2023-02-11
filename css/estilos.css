@@ -25,6 +25,10 @@ h1, h2, h3 {
   font-family: "Roboto", sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 .text-center {
   text-align: center;
 }
@@ -518,7 +522,6 @@ marquee {
 }
 .inner-text ul {
   margin-top: 50px;
-  list-style: none;
   width: 100%;
 }
 .inner-text ul li {
@@ -858,7 +861,6 @@ footer .practices h4 {
 footer .practices ul {
   margin: 20px auto;
   max-width: 300px;
-  list-style: none;
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -872,7 +874,6 @@ footer .practices ul li a:hover {
 footer footer .practices footer ul {
   margin: 20px auto;
   max-width: 300px;
-  list-style: none;
   font-size: 20px;
   margin-bottom: 20px;
 }
