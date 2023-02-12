@@ -3,16 +3,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     position: relative;
     background-color: $white;
 
     .practica-descripcion {
         float: right;
-        max-width: 50%;
+        max-width: 60%;
         padding: 80px 60px 40px;
         background: rgba(255,255,255,.8);
-        height: 100vh;
+        height: 100%;
 
         h2 {
             text-transform: uppercase;
@@ -32,27 +33,19 @@
         }
     }
 
-    @media (max-width: 466px) {
+    @media (max-width: 1200px) {
         .practica-descripcion {
             max-width: 100%;
             padding: 30px 15px;    
         }
     }
     
-    @media only screen and (min-width: 467px) and (max-width: 600px) {
-        .practica-descripcion {
-            max-width: 80%;
-            padding: 50px 20px 0px;    
-        }
-    
-    }
-    
-    @media only screen and (min-width: 601px) and (max-width: 1100px) {
+/*     @media only screen and (min-width: 601px) and (max-width: 1200px) {
         .practica-descripcion {
             max-width: 60%;
             padding: 50px 20px 0px;    
         }   
-    }
+    } */
     
     
 }

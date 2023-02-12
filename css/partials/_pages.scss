@@ -56,7 +56,11 @@
     }
 
     p {   
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+    }
+
+    p::first-letter {
+        font-size: 130%;
     }
     
 }
