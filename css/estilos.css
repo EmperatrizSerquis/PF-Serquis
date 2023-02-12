@@ -438,7 +438,7 @@ marquee {
   }
   .grid-item:nth-child(5) {
     grid-area: five;
-    margin-right: 0;
+    margin-left: 0;
     margin-top: -20px;
   }
 }
@@ -691,6 +691,13 @@ marquee {
   position: relative;
   background-color: rgba(255, 255, 255, 0.8);
 }
+#nosotros .nosotros .nos {
+  float: right;
+  max-width: 50%;
+  padding: 80px 60px 60px;
+  background: rgba(255, 255, 255, 0.8);
+  height: 100vh;
+}
 #nosotros .nosotros .nos h2 {
   text-transform: uppercase;
   letter-spacing: 1.8px;
@@ -814,6 +821,10 @@ marquee {
 }
 .form .formulario h2 {
   text-align: center;
+}
+
+.contact-page {
+  margin-top: 0px !important;
 }
 
 .contacto h2 {
@@ -1004,10 +1015,6 @@ footer .accion {
 .inner-center p {
   margin-bottom: 20px;
 }
-.inner-center .botones {
-  margin: 80px auto;
-  text-align: center;
-}
 
 .inner-left {
   text-align: left;
@@ -1025,28 +1032,32 @@ footer .accion {
   line-height: 25px;
 }
 
+.botones {
+  margin: 80px auto;
+  text-align: center;
+}
+
 .features {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 50px auto;
+  flex-wrap: wrap;
+  margin: 30px auto;
 }
 .features .feature {
   width: 30%;
   min-height: 400px;
   background-color: #2a2a2a;
   color: #eee;
-  border: 1ps solid #000;
   padding: 40px 10px;
   margin-bottom: 20px;
   text-align: center;
   flex: 1 1 auto;
   margin: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 .features .feature h2 {
@@ -1067,6 +1078,26 @@ footer .accion {
   text-decoration: none;
   margin: 0 auto;
 }
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+  .features .feature {
+    width: 45% !important;
+  }
+}
+.features .feature--dashed {
+  border: 5px dashed #B68D40;
+}
+.features .feature--dotted {
+  border: 5px dotted #eee;
+}
+.features .feature--ridge {
+  border: 5px ridge red;
+}
+.features .feature--solid {
+  border: 5px solid #999;
+}
+.features .feature--groove {
+  border: 5px groove #606060;
+}
 
 /* vista mobile */
 @media only screen and (min-width: 0px) and (max-width: 599px) {
@@ -1083,8 +1114,51 @@ footer .accion {
     font-size: 30px;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-  .feature {
-    width: 45%;
+#practica {
+  background-image: url("../img/accidente.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  background-color: #fff;
+}
+#practica .practica-descripcion {
+  float: right;
+  max-width: 50%;
+  padding: 80px 60px 40px;
+  background: rgba(255, 255, 255, 0.8);
+  height: 100vh;
+}
+#practica .practica-descripcion h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 40px;
+  font-weight: 700;
+}
+#practica .practica-descripcion p {
+  margin-bottom: 15px;
+}
+#practica .practica-descripcion p i {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #B68D40;
+}
+@media (max-width: 466px) {
+  #practica .practica-descripcion {
+    max-width: 100%;
+    padding: 30px 15px;
+  }
+}
+@media only screen and (min-width: 467px) and (max-width: 600px) {
+  #practica .practica-descripcion {
+    max-width: 80%;
+    padding: 50px 20px 0px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  #practica .practica-descripcion {
+    max-width: 60%;
+    padding: 50px 20px 0px;
   }
 }/*# sourceMappingURL=estilos.css.map */

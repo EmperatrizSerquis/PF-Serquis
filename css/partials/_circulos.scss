@@ -82,25 +82,27 @@
     .grid-item {
 
 		&:nth-child(1) {
-			grid-area: one;
-			justify-self: right;
+			@include grids(one, right);
 		}
+
 		&:nth-child(2) {
-			grid-area: two;
-			justify-self: center;
+			@include grids(two, center);
 		}
+
 		&:nth-child(3) {
-			grid-area: three;
-			justify-self: left;
+			@include grids(three, left);
 		}
 
 		&:nth-child(4) {
 			grid-area: four;
-            @include margenes(0,-20px);
+			margin-right: 0;
+			margin-top: -20px;
 		}
+
 		&:nth-child(5) {
 			grid-area: five;
-            @include margenes(0,-20px);
+			margin-left: 0;
+			margin-top: -20px;
 		}
 	}
 }
