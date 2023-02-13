@@ -993,6 +993,7 @@ footer .accion {
   padding-bottom: 15px;
   border-bottom: 2px solid #B68D40;
   letter-spacing: -2px;
+  text-transform: uppercase;
 }
 .hero .page-title p {
   margin-bottom: 35px;
@@ -1007,6 +1008,11 @@ footer .accion {
   text-transform: uppercase;
   letter-spacing: 5px;
   text-decoration: none;
+}
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  .hero .page-title h1 {
+    font-size: 38px;
+  }
 }
 
 .inner-center {

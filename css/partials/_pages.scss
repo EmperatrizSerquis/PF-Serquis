@@ -21,6 +21,7 @@
             padding-bottom: 15px;
             border-bottom: 2px solid $mainColor;
             letter-spacing: -2px;
+            text-transform: uppercase;
         }
 
         p {
@@ -38,6 +39,12 @@
             text-transform: uppercase;
             letter-spacing: 5px;
             text-decoration: none;
+        }
+
+        @media only screen and (min-width: 0px) and (max-width: 599px) {
+            h1 {
+                font-size: 38px;  
+            }
         }
         
 
