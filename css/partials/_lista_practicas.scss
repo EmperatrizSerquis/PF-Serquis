@@ -1,6 +1,8 @@
 .inner-text {
+
 	height: 100%;
 	margin-left: 100px;
+
 	h2 {
 		margin: 80px auto 10px;
 		font-weight: 600;
@@ -51,6 +53,17 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 466px) {
+	.inner-text {
+		margin-left: 10px; 
+		
+		h2 {
+			font-size: 30px;
+		}
+	}
+}
+
 .text-image {
 	position: absolute;
 	top: 50px;

@@ -60,7 +60,9 @@
     }
 
     p::first-letter {
-        font-size: 130%;
+        font-size: 140%;
+		font-weight: bold;
+		color: $mainColor;
     }
     
 }

@@ -34,7 +34,7 @@ ul {
 }
 
 .text-content {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 section {
@@ -233,6 +233,16 @@ header .navbar .navbar-collapse .accion {
   border: 2px solid #eee;
 }
 
+@media only screen and (max-width: 466px) {
+  .circulito {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 467px) and (max-width: 600px) {
+  .circulito {
+    margin-bottom: 40px;
+  }
+}
 @keyframes circulito-animation {
   0% {
     transform: translateX(0%);
@@ -326,6 +336,11 @@ main .cto h1 {
 }
 main .cto p {
   margin-bottom: 25px;
+}
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  main .cto {
+    width: 90%;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
   main .cto {
@@ -565,6 +580,14 @@ marquee {
   background-color: #1f180b;
 }
 
+@media only screen and (max-width: 466px) {
+  .inner-text {
+    margin-left: 10px;
+  }
+  .inner-text h2 {
+    font-size: 30px;
+  }
+}
 .text-image {
   position: absolute;
   top: 50px;
@@ -638,9 +661,15 @@ marquee {
 .banner-dark2 a {
   margin-bottom: 70px;
 }
+@media only screen and (max-width: 455px) {
+  .banner-dark2 h2 {
+    width: 100%;
+    font-size: 30px;
+  }
+}
 
 .testimonios {
-  margin: 100px auto 150px;
+  margin: 100px auto 100px;
   padding: 0 50px;
 }
 .testimonios h2 {
@@ -666,20 +695,29 @@ marquee {
   margin-bottom: 15px;
 }
 
-.pepito:hover {
-  background-color: #2a2a2a;
-  color: #eee;
+@media only screen and (max-width: 466px) {
+  .testimonios {
+    padding: 0 20px;
+  }
+  .testimonios h2 {
+    font-size: 30px;
+  }
 }
-
-.juanito:hover {
-  background-color: #2a2a2a;
+/* Testimonios hover solo en index.html */
+.pepito:hover {
   color: #eee;
   background-color: #B68D40;
 }
 
-.pedrito:hover {
-  background-color: #2a2a2a;
+.juanito:hover {
   color: #eee;
+  background-color: #eee;
+  color: #2a2a2a;
+}
+
+.pedrito:hover {
+  color: #eee;
+  background-color: #B68D40;
 }
 
 #nosotros {
@@ -694,7 +732,7 @@ marquee {
 #nosotros .nosotros .nos {
   float: right;
   max-width: 90%;
-  padding: 80px 60px 60px;
+  padding: 60px;
   background: rgba(255, 255, 255, 0.8);
   height: 100vh;
 }
@@ -707,15 +745,28 @@ marquee {
 #nosotros .nosotros .nos p {
   margin-bottom: 15px;
 }
-#nosotros .nosotros .nos p::first-letter {
-  font-size: 140%;
-  font-weight: bold;
-  color: #B68D40;
-}
 #nosotros .nosotros .nos i {
   font-size: 30px;
   margin-bottom: 15px;
   color: #B68D40;
+}
+@media only screen and (max-width: 466px) {
+  #nosotros .nosotros .nos {
+    max-width: 100%;
+    padding: 30px 15px 25px;
+  }
+}
+@media only screen and (min-width: 467px) and (max-width: 600px) {
+  #nosotros .nosotros .nos {
+    max-width: 80%;
+    padding: 50px 20px 0px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  #nosotros .nosotros .nos {
+    max-width: 60%;
+    padding: 50px 20px 0px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   #nosotros .nosotros .nos {
@@ -747,6 +798,11 @@ marquee {
   color: #3da733;
   font-size: 35px;
   margin-left: 10px;
+}
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  #contacto .card-contacto {
+    margin: 5px;
+  }
 }
 #contacto .mensaje {
   margin-top: 50px;
@@ -912,44 +968,6 @@ footer .accion {
   max-width: 60px;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 599px) {
-  .cto {
-    width: 90%;
-  }
-  .card-contacto {
-    margin: 5px;
-    padding: 15px;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
-  .cto {
-    width: 60%;
-  }
-}
-@media only screen and (max-width: 466px) {
-  .nos {
-    max-width: 100%;
-    padding: 50px 15px 25px;
-  }
-  .circulito {
-    margin-bottom: 10px;
-  }
-}
-@media only screen and (min-width: 467px) and (max-width: 600px) {
-  .nos {
-    max-width: 80%;
-    padding: 50px 20px 0px;
-  }
-  .circulito {
-    margin-bottom: 40px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 1100px) {
-  .nos {
-    max-width: 60%;
-    padding: 50px 20px 0px;
-  }
-}
 .hero {
   height: calc(70vh - 80px);
   width: 100%;
@@ -1003,7 +1021,9 @@ footer .accion {
   margin-bottom: 15px;
 }
 .inner-center p::first-letter {
-  font-size: 130%;
+  font-size: 140%;
+  font-weight: bold;
+  color: #B68D40;
 }
 
 .inner-left {
@@ -1033,6 +1053,7 @@ footer .accion {
   align-items: center;
   flex-wrap: wrap;
   margin: 30px auto;
+  /* vista mobile */
 }
 .features .feature {
   width: 30%;
@@ -1068,6 +1089,20 @@ footer .accion {
   text-decoration: none;
   margin: 0 auto;
 }
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  .features .hero {
+    height: 80vh;
+  }
+  .features .features {
+    flex-direction: column;
+  }
+  .features .feature {
+    width: 100%;
+  }
+  .features .inner-left h2 {
+    font-size: 30px;
+  }
+}
 @media only screen and (min-width: 600px) and (max-width: 991px) {
   .features .feature {
     width: 45% !important;
@@ -1089,21 +1124,6 @@ footer .accion {
   border: 5px groove #606060;
 }
 
-/* vista mobile */
-@media only screen and (min-width: 0px) and (max-width: 599px) {
-  .hero {
-    height: 80vh;
-  }
-  .features {
-    flex-direction: column;
-  }
-  .feature {
-    width: 100%;
-  }
-  .inner-left h2 {
-    font-size: 30px;
-  }
-}
 #practica {
   background-image: url("../img/accidente.jpg");
   background-repeat: no-repeat;

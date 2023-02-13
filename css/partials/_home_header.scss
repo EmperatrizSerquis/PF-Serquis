@@ -32,6 +32,12 @@ main {
         }
     }
 
+    @media only screen and (min-width: 0px) and (max-width: 599px) {
+        .cto {
+            width: 90%;  
+        }
+    }
+
     @media only screen and (min-width: 600px) and (max-width: 1200px) {
         .cto {
             width: 60%;  

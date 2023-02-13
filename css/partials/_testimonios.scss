@@ -1,6 +1,6 @@
 .testimonios {
 
-    margin: 100px auto 150px;
+    margin: 100px auto 100px;
     padding: 0 50px;
 
     h2 {
@@ -31,17 +31,40 @@
     }
 }
 
+@media only screen and (max-width: 466px) {
+
+    .testimonios {
+        padding: 0 20px;
+
+        h2 {
+            font-size: 30px;    
+        }
+    }
+    
+}
+
+/* Testimonios hover solo en index.html */
 $nombres:
 pepito,
 juanito,
 pedrito;
 
 @each $testimonio in $nombres {
+    
     .#{$testimonio}:hover  {
-        background-color: $myBlack;
+
         color: $blanco;
 
-        @if $testimonio == juanito {
+        @if $testimonio == pepito {
+            background-color: $mainColor;
+        }
+
+        @else if $testimonio == juanito {
+            background-color: $blanco;
+            color: $myBlack;
+        }
+    
+        @else {
             background-color: $mainColor;
         }
     }

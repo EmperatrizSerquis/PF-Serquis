@@ -65,6 +65,18 @@
     }
 }
 
+@media only screen and (max-width: 466px) {
+    .circulito {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 467px) and (max-width: 600px) {
+    .circulito {
+        margin-bottom: 40px;
+    }
+}
+
 @keyframes circulito-animation {
 	0% {
 		transform: translateX(0%);
