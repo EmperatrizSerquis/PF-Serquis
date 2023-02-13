@@ -898,6 +898,7 @@ footer .logo span {
 }
 footer .menu a {
   color: #fff;
+  font-size: 20px;
 }
 footer .menu a:hover {
   color: #B68D40;
@@ -941,6 +942,7 @@ footer .redes i:hover {
 }
 footer .accion {
   justify-content: center;
+  margin-top: 40px;
 }
 
 .subir {

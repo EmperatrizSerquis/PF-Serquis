@@ -17,6 +17,7 @@ footer {
 
 		a {
 			color: $white;
+            font-size: $fs20;
 
 			&:hover {
 				color: $mainColor;
@@ -78,6 +79,7 @@ footer {
 
     .accion {
         justify-content: center;
+        margin-top: 40px;
     }
 	
 }
