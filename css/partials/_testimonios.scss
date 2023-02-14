@@ -10,9 +10,8 @@
     }
 
     .testi {
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
+        
+        @include displayflex();
 
         .testimonio {
             padding: 20px;
