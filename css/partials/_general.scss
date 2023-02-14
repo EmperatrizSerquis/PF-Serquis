@@ -7,7 +7,6 @@
         background-color: black;
         color: $mainColor;
     }
-
 }
 
 html {
@@ -56,6 +55,10 @@ section {
 		-webkit-box-shadow: 5px 4px 5px -3px $mainColor !important;
 		box-shadow: 5px 4px 5px -3px $mainColor !important;
 	}
+}
+
+.text-gris {
+    color: $grisClaro;
 }
 
 .bg-micolor {
