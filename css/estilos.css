@@ -1154,17 +1154,18 @@ footer .accion {
   height: 100%;
   position: relative;
   background-color: #fff;
+  background-clip: content-box;
 }
 #practica .practica {
   min-height: 100vh;
-  height: 100%;
+  height: 830px;
 }
 #practica .practica .practica-descripcion {
   float: right;
   max-width: 60%;
   padding: 80px 60px;
   background: rgba(255, 255, 255, 0.8);
-  height: 100vh;
+  min-height: 100%;
 }
 #practica .practica .practica-descripcion h2 {
   text-transform: uppercase;
@@ -1189,6 +1190,6 @@ footer .accion {
 @media only screen and (min-width: 768px) {
   #practica .practica .practica-descripcion {
     max-width: 60%;
-    padding: 50px 20px 0px;
+    padding: 100px 50px 0px;
   }
 }/*# sourceMappingURL=estilos.css.map */

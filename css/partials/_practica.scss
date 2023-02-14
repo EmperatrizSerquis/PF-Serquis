@@ -7,17 +7,18 @@
     height: 100%;
     position: relative;
     background-color: $white;
+    background-clip: content-box;
 
     .practica {
         min-height: 100vh;
-        height: 100%;
+        height: 830px;
 
         .practica-descripcion {
             float: right;
             max-width: 60%;
             padding: 80px 60px;
             background: rgba(255,255,255,.8);
-            height: 100vh;
+            min-height: 100%;
     
             h2 {
                 text-transform: uppercase;
@@ -48,7 +49,7 @@
         @media only screen and (min-width: 768px) {
             .practica-descripcion {
                 max-width: 60%;
-                padding: 50px 20px 0px;    
+                padding: 100px 50px 0px;    
             }   
         }
     }
