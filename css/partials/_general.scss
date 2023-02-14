@@ -32,6 +32,15 @@ ul {
 
 .text-content {
     margin-top: 40px;
+    @include displayflex();
+    flex-direction: column;
+
+    p::first-letter {
+        font-size: 140%;
+		font-weight: bold;
+		color: $mainColor;
+    }
+    
 }
 
 section {

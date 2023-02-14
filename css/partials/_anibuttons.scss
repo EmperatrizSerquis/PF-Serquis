@@ -54,7 +54,7 @@
     width: 15px;
     height: 15px;
     border-radius: 50%; 
-    border: 2px solid $mainColor; 
+    border: 2px solid $myGris; 
     transition: all 10s ease-in-out;
     animation: circulito-animation 10s ease-in-out infinite;
 
@@ -83,7 +83,7 @@
 	}
 	50% {
 		transform: translateX(200px);
-		background-color: $mainColor;
+		background-color: $grisClaro;
 	}
 	100% {
 		transform: translateX(100%);

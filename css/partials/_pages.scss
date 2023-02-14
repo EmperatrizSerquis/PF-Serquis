@@ -64,14 +64,13 @@
 
     p {   
         margin-bottom: 15px;
-    }
+    }  
 
     p::first-letter {
         font-size: 140%;
-		font-weight: bold;
-		color: $mainColor;
+        font-weight: bold;
+        color: $myGris;
     }
-    
 }
 
 .inner-left {

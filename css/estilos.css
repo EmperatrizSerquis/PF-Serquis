@@ -35,6 +35,15 @@ ul {
 
 .text-content {
   margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.text-content p::first-letter {
+  font-size: 140%;
+  font-weight: bold;
+  color: #B68D40;
 }
 
 section {
@@ -223,7 +232,7 @@ header .navbar .navbar-collapse .accion {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 2px solid #B68D40;
+  border: 2px solid #606060;
   transition: all 10s ease-in-out;
   animation: circulito-animation 10s ease-in-out infinite;
 }
@@ -249,7 +258,7 @@ header .navbar .navbar-collapse .accion {
   }
   50% {
     transform: translateX(200px);
-    background-color: #B68D40;
+    background-color: #999;
   }
   100% {
     transform: translateX(100%);
@@ -745,6 +754,11 @@ marquee {
 #nosotros .nosotros .nos p {
   margin-bottom: 15px;
 }
+#nosotros .nosotros .nos p p::first-letter {
+  font-size: 140%;
+  font-weight: bold;
+  color: #B68D40;
+}
 #nosotros .nosotros .nos i {
   font-size: 30px;
   margin-bottom: 15px;
@@ -1031,7 +1045,7 @@ footer .accion {
 .inner-center p::first-letter {
   font-size: 140%;
   font-weight: bold;
-  color: #B68D40;
+  color: #606060;
 }
 
 .inner-left {
