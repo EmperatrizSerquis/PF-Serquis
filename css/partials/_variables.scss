@@ -37,3 +37,10 @@ $s100: 100%;
     justify-content: space-around;
     align-items: center;
 }
+
+@mixin backgroundImage() {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+

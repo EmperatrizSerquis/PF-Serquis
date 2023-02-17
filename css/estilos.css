@@ -10110,7 +10110,6 @@ header .navbar .navbar-collapse .accion {
   }
 }
 main {
-  height: calc(100vh - 80px);
   height: 100vh;
   width: 100%;
   background-color: #333;
@@ -10528,15 +10527,19 @@ marquee {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
   position: relative;
   background-color: rgba(255, 255, 255, 0.8);
+  background-clip: content-box;
+  height: 800px;
+}
+#nosotros .nosotros {
+  height: 800px;
 }
 #nosotros .nosotros .nos {
   float: right;
   padding: 80px 60px;
   background: rgba(255, 255, 255, 0.8);
-  height: 100vh;
+  height: 100%;
 }
 #nosotros .nosotros .nos h2, #nosotros .nosotros .nos .h2 {
   text-transform: uppercase;
@@ -10563,13 +10566,13 @@ marquee {
     padding: 60px 15px 25px;
   }
 }
-@media only screen and (min-width: 467px) and (max-width: 600px) {
+@media only screen and (min-width: 467px) and (max-width: 767px) {
   #nosotros .nosotros .nos {
     max-width: 80%;
     padding: 60px 20px 0px;
   }
 }
-@media only screen and (min-width: 601px) and (max-width: 1100px) {
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
   #nosotros .nosotros .nos {
     max-width: 60%;
     padding: 60px 20px 0px;
@@ -10581,6 +10584,14 @@ marquee {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  #nosotros {
+    height: 950px !important;
+  }
+  #nosotros .nosotros {
+    height: 950px;
+  }
+}
 #contacto .card-contacto {
   margin: 55px;
   padding: 30px;
@@ -10940,19 +10951,16 @@ footer .accion {
 }
 
 #practica {
-  background-image: url("../img/accidente.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  height: 100%;
   position: relative;
   background-color: #fff;
   background-clip: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 900px;
 }
 #practica .practica {
-  min-height: 100vh;
-  height: 830px;
+  height: 900px;
 }
 #practica .practica .practica-descripcion {
   float: right;
@@ -10975,7 +10983,7 @@ footer .accion {
   margin-bottom: 15px;
   color: #B68D40;
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   #practica .practica .practica-descripcion {
     max-width: 100%;
     padding: 30px 15px;
@@ -10986,4 +10994,33 @@ footer .accion {
     max-width: 60%;
     padding: 100px 50px 0px;
   }
+}
+
+@media only screen and (max-width: 400px) {
+  #practica {
+    height: 1000px;
+  }
+  #practica .practica {
+    height: 1000px;
+  }
+}
+/* Fotos en prácticas */
+.transito {
+  background-image: url("../img/transito.jpg");
+}
+
+.accidente {
+  background-image: url("../img/accidente.jpg");
+}
+
+.perjuicios {
+  background-image: url("../img/perjuicios.jpg");
+}
+
+.praxis {
+  background-image: url("../img/praxis.jpg");
+}
+
+.laboral {
+  background-image: url("../img/laboral.jpg");
 }/*# sourceMappingURL=estilos.css.map */

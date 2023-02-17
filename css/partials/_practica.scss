@@ -1,17 +1,13 @@
 #practica {
-    background-image: url('../img/accidente.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    height: 100%;
+
     position: relative;
     background-color: $white;
     background-clip: content-box;
+    @include backgroundImage();
+    height: 900px;
 
     .practica {
-        min-height: 100vh;
-        height: 830px;
+        height: 900px;
 
         .practica-descripcion {
             float: right;
@@ -38,8 +34,7 @@
             }
         }
 
-        @media (max-width: 767px) {
-
+        @media only screen and (max-width: 767px) {
             .practica-descripcion {
                 max-width: 100%;
                 padding: 30px 15px;    
@@ -51,6 +46,56 @@
                 max-width: 60%;
                 padding: 100px 50px 0px;    
             }   
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    #practica {
+        height: 1000px; 
+
+        .practica {
+            height: 1000px;    
+        }
+    } 
+}
+
+
+/* Fotos en prácticas */
+$practicas:
+transito,
+accidente,
+perjuicios,
+praxis,
+laboral;
+
+@each $practica in $practicas {
+    
+    .#{$practica} {
+
+        @if $practica == transito {
+            background-image: url('../img/#{$practica}.jpg');
+        }
+
+        @else if $practica == accidente {
+            background-image: url('../img/#{$practica}.jpg');
+        }
+
+        @else if $practica == perjuicios {
+            background-image: url('../img/#{$practica}.jpg');
+        }
+
+        @else if $practica == praxis {
+            background-image: url('../img/#{$practica}.jpg');
+        }
+
+        @else if $practica == laboral {
+            background-image: url('../img/#{$practica}.jpg');
+        }
+    
+        @else {
+            background-image: url('../img/accidente.jpg')
         }
     }
 }
