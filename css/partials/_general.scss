@@ -29,12 +29,10 @@ ul {
     text-align: center;
 }
 
-.nav-link {
+.nav-link .nav-link:hover, .nav-link:active,
+.nav-link:focus {
     color: $mainColor;
-}
-
-.nav-link:hover {
-    color: $mainColor;
+    border-color: transparent;
 }
 
 .text-content {

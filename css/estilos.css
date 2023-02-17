@@ -9823,12 +9823,10 @@ ul {
   text-align: center;
 }
 
-.nav-link {
+.nav-link .nav-link:hover, .nav-link:active,
+.nav-link:focus {
   color: #B68D40;
-}
-
-.nav-link:hover {
-  color: #B68D40;
+  border-color: transparent;
 }
 
 .text-content {
