@@ -9823,6 +9823,14 @@ ul {
   text-align: center;
 }
 
+.nav-link {
+  color: #B68D40;
+}
+
+.nav-link:hover {
+  color: #B68D40;
+}
+
 .text-content {
   margin-top: 40px;
   display: flex;
