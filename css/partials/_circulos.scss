@@ -5,7 +5,7 @@
 
     .grid-item {
         border-radius: 50%;
-		@include medidas(180px, 180px);
+	@include medidas(180px, 180px);
         display: flex;
         justify-content: center;
         align-items: center;
