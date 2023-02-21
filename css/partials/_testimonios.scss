@@ -59,8 +59,7 @@ pedrito;
         }
 
         @else if $testimonio == juanito {
-            background-color: $blanco;
-            color: $myBlack;
+            @include backgroundColor($blanco, $myBlack);
         }
     
         @else {

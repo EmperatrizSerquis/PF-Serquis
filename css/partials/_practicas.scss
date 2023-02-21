@@ -28,11 +28,10 @@
 
 			a {
 				text-decoration: none;
-				color: $myBlack;
+				@include backgroundColor($white, $myBlack);
 				font-size: 30px;
 				font-family: $fontH;
 				text-transform: capitalize;
-				background-color: $white;
 				padding: 15px;
 				border-bottom: 1px dotted $myBlack;
 				margin-bottom: 50px;

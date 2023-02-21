@@ -1,0 +1,27 @@
+@mixin grids ($number, $justify) {
+    grid-area: $number;
+	justify-self: $justify;
+}
+
+@mixin displayflex() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin backgroundImage() {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin medidas ($width, $height) {
+    width: $width;
+	height: $height;
+}
+
+@mixin backgroundColor($background, $color) {
+    background-color: $background;
+    color: $color;
+}
+

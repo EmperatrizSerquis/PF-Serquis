@@ -27,20 +27,3 @@ $m50: 50px;
 
 $s100: 100%;
 
-@mixin grids ($number, $justify) {
-    grid-area: $number;
-	justify-self: $justify;
-}
-
-@mixin displayflex() {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-@mixin backgroundImage() {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-

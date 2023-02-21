@@ -2,8 +2,7 @@ footer {
 
 	text-align: center;
 	font-size: 30px;
-	background-color: $black;
-	color: $blanco;
+    @include backgroundColor($black, $blanco);
 	padding-top: 20px;
 
 	.logo {
@@ -85,10 +84,8 @@ footer {
 }
 
 .subir {
-    height: 40px;
-    width: 40px;
-    background-color: $mainColor;
-    color: $white;
+    @include medidas(40px, 40px);
+    @include backgroundColor($mainColor, $white);
     position: fixed;
     right: 40px;
     bottom: 20px;

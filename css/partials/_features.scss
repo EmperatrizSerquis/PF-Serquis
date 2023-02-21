@@ -7,9 +7,7 @@
     .feature {
         width: 30%;
         min-height: 440px;
-        background-color: #2a2a2a;
-        color: #eee;
-
+        @include backgroundColor($myBlack, $blanco);
         padding: 40px 10px;
         margin-bottom: 20px;
         text-align: center; 

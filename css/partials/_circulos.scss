@@ -1,13 +1,11 @@
 .grid-container-circles {
 	margin: 50px auto;
-	width: 100%;
-	height: auto;
+	@include medidas(100%, auto);
 	display: grid;
 
     .grid-item {
         border-radius: 50%;
-        height: 180px;
-        width: 180px;
+		@include medidas(180px, 180px);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -17,12 +15,11 @@
 
     .circle {
         display: flex;
-        height: 180px;
-        width: 180px;
+        @include medidas(180px, 180px);
         align-items: center;
         border-radius: 100%;
         color: $white;
-        background: linear-gradient(#eee, #2a2a2a, $mainColor);
+        background: linear-gradient($blanco, $myBlack, $mainColor);
         border: 5px solid rgb(240, 233, 233);
         text-align: center;
         margin: 0 auto;
@@ -119,8 +116,7 @@
     }
 
     .grid-item {
-		height: 150px;
-		width: 150px;
+		@include medidas(150px, 150px);
 
 		&:nth-child(1) {
 			grid-area: one;

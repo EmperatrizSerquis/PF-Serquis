@@ -24,11 +24,10 @@
 			font-size: 30px;
 			a {
 				text-decoration: none;
-				color: $myBlack;
 				font-size: 30px;
 				font-family: $fontH;
 				text-transform: capitalize;
-				background-color: $white;
+				@include backgroundColor($white, $myBlack);
 				padding: 15px;
 				border-bottom: 1px dotted $myBlack;
 				margin-bottom: 50px;

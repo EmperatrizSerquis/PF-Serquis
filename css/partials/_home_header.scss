@@ -1,6 +1,5 @@
 main {
-    height: 100vh;
-    width: $s100;
+    @include medidas($s100, 100vh);
     background-color: $grisOscuro;
     background-image: url(../img/lawblack.jpg);
     background-size: cover;
@@ -11,9 +10,8 @@ main {
         position: absolute;
         bottom: 15%;
         left: 10%;
-        color: $white;
-        width: 30%;  
-        background-color: $mainShadow;
+        width: 30%; 
+        @include backgroundColor($mainShadow, $white); 
         border-bottom: 2px solid $mainColor;
         padding: 20px;
         font-family: $fontH;
@@ -47,7 +45,7 @@ main {
 marquee {
     display: flex;
     text-align: center;
-    background-color: $blanco;
+    @include backgroundColor($blanco, $mainColor);
     border-top: 1px solid $myBlack;
     border-bottom: 3px solid $mainColor; 
     text-transform: uppercase;
@@ -55,7 +53,6 @@ marquee {
     padding: 10px;
     font-weight: 300;
     font-size: 20px;
-    color: $mainColor;
     margin-bottom: 0px;
 }
 

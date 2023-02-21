@@ -1,6 +1,5 @@
 .banner-dark {
-    background-color: #000;
-    color: white;
+    @include backgroundColor($black, $white);
     text-align: center;
     display: flex;
     flex-direction: column;

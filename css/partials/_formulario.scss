@@ -87,8 +87,7 @@
                 text-decoration: none;
                 padding: 10px 30px;
                 font-size: 20px;
-                background: #2a2a2a;
-                color: $white;
+                @include backgroundColor($myBlack, $white);
                 margin-left: auto;
                 text-transform: uppercase;
                 position: relative;
