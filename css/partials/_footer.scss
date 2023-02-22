@@ -2,11 +2,11 @@ footer {
 
 	text-align: center;
 	font-size: 30px;
-    @include backgroundColor($black, $blanco);
+    	@include backgroundColor($black, $blanco);
 	padding-top: 20px;
 
 	.logo {
-
+		
 		span {
 			color: $mainColor;
 		}
@@ -16,7 +16,7 @@ footer {
 
 		a {
 			color: $white;
-            font-size: $fs20;
+            		font-size: $fs20;
 
 			&:hover {
 				color: $mainColor;
@@ -48,8 +48,7 @@ footer {
 
                 &:hover {
                     color: $mainColor;
-                }
-                
+                }       
             }
         }
     }
