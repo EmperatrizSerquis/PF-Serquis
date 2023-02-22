@@ -2,18 +2,18 @@
 
 	.card-contacto {
 
-        margin: 55px;
-        padding: 30px;
-        border-radius: 10% 0%;
+	    margin: 55px;
+	    padding: 30px;
+            border-radius: 10% 0%;
     
-        .card-body {
-            margin: 0 auto;
-            margin-bottom: 1.5rem;
+           .card-body {
+              margin: 0 auto;
+              margin-bottom: 1.5rem;
     
-            .contacto-details {
-                margin-top: 40px;
+              .contacto-details {
+                  margin-top: 40px;
     
-                i {
+                 i {
                     color: $mainColor;
                     font-size: 25px;
                     margin-right: 10px;
@@ -28,11 +28,8 @@
                         margin-left: 10px;
                     }
                 }
-            
-                
             }
         }
-        
     }
 
     @media only screen and (min-width: 0px) and (max-width: 599px) {
@@ -113,10 +110,7 @@
         h2 {
             text-align: center;
         }
-    
     }
-
-
 }
 
 .contact-page {
@@ -138,7 +132,6 @@
 		p {
 			margin-bottom: 15px;
 		}
-
 	}
 
 	i {
@@ -146,5 +139,4 @@
 		margin-bottom: 15px;
 		color: $mainColor;
 	}
-
 }
