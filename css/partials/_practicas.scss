@@ -46,16 +46,16 @@
 
 			i {
 				color: $mainColor;
-                border-radius: 50%;
+                		border-radius: 50%;
 			}
 
-            $c-color: $mainColor;
+           		 $c-color: $mainColor;
     
-            @for $i from 1 through 5 {
-                .i-#{$i} {
-                    background-color: darken($mainColor, $i * 8%);
-                }
-            }
+		         @for $i from 1 through 5 {
+			     .i-#{$i} {
+			         background-color: darken($mainColor, $i * 8%);
+			     }
+		         }
 		}
 	}
 }
